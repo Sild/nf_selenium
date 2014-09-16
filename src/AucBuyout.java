@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

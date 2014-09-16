@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 public class Nfconfig {
 	private Nfconfig() {

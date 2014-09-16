@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 public class Field {
 	public static Field getInstance() {
@@ -51,9 +50,8 @@ public class Field {
 	}
 
     final public class Shrine {
-        public static final String chapel = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr/td/div[1]/div[2]";
+        public static final String chapel = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr/td[2]/table/tbody/tr/td/div[1]/div[2]";
         public static final String prayer = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[2]/td/div/table/tbody/tr/td[1]/div/div/form/div[2]/div[2]";
-        public static final String chapel2 = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr/td/div[2]/div[2]";
     }
 	
 	final public class Panel {

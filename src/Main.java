@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,9 +6,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Vector;
-
-import neverfate_bot.UserManager.User;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -104,7 +100,7 @@ public class Main {
 	private static String select_login() {
 		String result = null;
 		System.out.print("available login: ");
-		Map<String, User> users = UserManager.getInstance().users();
+		Map<String, UserManager.User> users = UserManager.getInstance().users();
 		Iterator it = users.entrySet().iterator();
 		int i = 0;
 	    while (it.hasNext()) {

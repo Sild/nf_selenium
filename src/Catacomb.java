@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 import java.util.Vector;
 
@@ -10,10 +9,18 @@ public class Catacomb {
 	
 	public void run() {
 		Selenium selen = Selenium.getInstance();
+        enter_cata(selen);
 		full_cata(selen);
 	}
-	
+    private void enter_cata(Selenium selen)
+    {
+        selen.switch_to();
+        selen.switch_to(Field.Panel.iframe_top);
+        selen.click(Field.Panel.go_street);
+    }
 	private void full_cata(Selenium selen) {
+		selen.switch_to();
+		selen.switch_to(Field.Panel.iframe_main);
 		while(selen.find(Field.Move.catacomb)) {
 			selen.click(Field.Move.catacomb);
 			try {
@@ -22,13 +29,9 @@ public class Catacomb {
 			}
 			
 		}
-		selen.switch_to();
-		selen.switch_to(Field.Panel.iframe_main);
 		int step = 0;
 		for (Maps.Catacomb_node node : this.map) {
-			System.out.println("step " + ++step);
 			this.wait_allow_move(selen);
-
 			switch( node.direct ) {
 			case 0:
 				selen.click(Field.Catacomb.north);

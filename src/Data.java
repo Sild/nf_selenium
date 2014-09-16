@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;

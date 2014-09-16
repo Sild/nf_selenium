@@ -1,4 +1,3 @@
-package neverfate_bot;
 import java.util.Map;
 import java.util.Vector;
 /**

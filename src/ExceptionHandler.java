@@ -1,4 +1,3 @@
-package neverfate_bot;
 
 public final class ExceptionHandler {
 	public static void stringToInteger(String str) {

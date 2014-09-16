@@ -1,4 +1,3 @@
-package neverfate_bot;
 import javax.swing.*;
 import  java.awt.*;
 import java.awt.event.*;
